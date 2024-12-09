@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>raii-Flex</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdf6e3;
+      color: #5a5a5a;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8e4d8;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 5;
+      display: flex;
+      align-items: center;
+    }
+
+    header nav ul li {
+      margin: 0 30px;
+      height: bottom;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #8b5e34;
+      font-weight: bold;
+      margin: 2;
+      line-height: 1.6;
+    }
+
+    header nav ul li a:hover {
+      color: #5a2e15;
+    }
+
+    #flex {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .artwork-carousel img {
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease; /* Smooth transition */
+    }
+
+    .artwork-carousel img:hover {
+      transform: scale(1.1); /* Zoom-in effect */
+    }
+
+    footer {
+      background-color: #f8e4d8;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+
+    /* New CSS for centering and resizing animation images */
+    .media {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Adds space between the images */
+      margin-top: 20px;
+    }
+
+    .media img {
+      max-width: 400px; /* Increase the size of the animation images */
+      height: auto;
+      border-radius: 8px; /* Optional, gives a nice rounded border */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease; /* Smooth transition */
+    }
+
+    .media img:hover {
+      transform: scale(1.1); /* Zoom-in effect */
+    }
+
+    /* New CSS to center h2 */
+    h2 {
+      text-align: center;
+      margin-top: 20px; /* Optional, adds spacing above the h2 */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="ven_tiongco.html"><img src="13371-mxUhhpJ-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ven_tiongco.html">HOME</a></li>
+        <li><a href="it111blog.html">ITIII BLOG ENTRIES</a></li>
+        <li><a href="fklexven.html">FLEX</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="flex">
+    <h3>MY ARTWORKS ARE SOMETHING THAT MAKE ME PROUD.</h3>
+    <div class="artwork-carousel">
+      <img src="syada.jpg" alt="Artwork 1">
+      <img src="SYADAMOI.jpg" alt="Artwork 2">
+      <img src="syada1.jpg" alt="Artwork 2">
+      <img src="syada2.jpg" alt="Artwork 2">
+      <img src="syada3.jpg" alt="Artwork 2">
+    </div>
+  </section>
+
+  <h2>Animations</h2>
+  <div class="media">
+    <a href="https://youtu.be/t4vgxm6c4LA" target="_blank">
+      <img src="venrun.png" alt="Animation 1">
+    </a>
+    <a href="https://youtu.be/8upjJvbbuD4" target="_blank">
+      <img src="ven.png" alt="Animation 2">
+    </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Ven Laurence Tiongco</p>
+  </footer>
+</body>
+</html>

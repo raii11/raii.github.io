@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>raii-ITIII Blog</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #fdf6e3;
+        color: #5a5a5a;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #f8e4d8;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: #8b5e34;
+        font-weight: bold;
+        font-size: 24px;
+      }
+      .logo a img {
+        max-width: 100px; 
+        height: auto;     
+      }
+
+      nav a {
+        color: #00ffff;
+        margin: 0 1em;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #ff00ff;
+      }
+
+      header nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      header nav ul li {
+        margin: 0 20px;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: #8b5e34;
+        font-weight: bold;
+      }
+
+      header nav ul li a:hover {
+        color: #5a2e15;
+      }
+
+      .content {
+        padding: 40px 20px;
+        text-align: left;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 1200px; 
+        display: flex; 
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        color: #8b5e34;
+        background-color: #d8c3b7;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .highlight-box {
+        flex: 1 1 20%;
+        padding: 10px;
+        background-color: #f8e4d8;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        min-width: 200px; 
+        text-align: center; 
+      }
+
+      .highlight-box h1 {
+        background-color: #d8c3b7;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .highlight-box ul {
+        padding-left: 20px;
+        list-style: none;
+      }
+
+      .highlight-box li {
+        margin-bottom: 10px;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #8b5e34;
+      }
+
+      footer {
+        background-color: #f8e4d8;
+        color: #5a5a5a;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+        font-size: 0.9em;
+      }
+
+      .social-icons a {
+        color: #5a5a5a;
+        margin: 0 10px;
+        font-size: 30px;
+        text-decoration: none;
+      }
+
+      .social-icons a:hover {
+        color: #ff00ff;
+      }
+
+	img {
+		transition: transform 0.3s ease, opacity 0.3s ease;
+	}
+
+	img:hover {
+		transform: scale(1.05); 
+		opacity: 0.9; 
+	}
+
+      @media screen and (max-width: 768px) {
+        .content {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .highlight-box {
+          width: 80%; 
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="ven_tiongco.html"><img src="13371-mxUhhpJ-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ven_tiongco.html">HOME</a></li>
+        <li><a href="it111blog.html">ITIII BLOG ENTRIES</a></li>
+        <li><a href="fklexven.html">FLEX</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- New section for 5 boxes -->
+  <div class="content">
+    <div class="highlight-box">
+      <h1>Aug 30, 2024</h1>
+      <img src="vengene.png" alt="Image for August 30, 2024" style="width: 100%; height: auto; border-radius: 5px;">
+	  <h4 class="btitle">Topic 1: Technology Timeline to Computing's Impact to Industries</h4>
+	  <br>
+            <p class="bxp">- In this topic we've tackled about the technological timeline and then we are tasked to
+                do an infographics regarding the topic.</p>
+    </div>
+    <div class="highlight-box">
+      <h1>Sept 9, 2024</h1>
+            <h2> Topic 2: Information Processing Cycle</h2>
+            <ul>
+			<p class="bxp">
+				Data vs Information:<br>
+                Data - Raw representation of facts and concepts.<br>
+                Information - Organized and meaningful data.<br>
+                Data Processing - Organized and systematic manipulation of information.<br>
+                Good information is relevant, complete, cost-effective, presentable, accurate, and timely.<br>
+				</p>
+                
+            </ul>
+			 <h2>Topic 3: Computer Systems Concepts of Computer Security</h2>
+            <ul>
+			<p class="bxp">
+				Systematic interaction between entities.<br>
+                Four components of a computer system: Hardware, Software, Peopleware, and Dataware.<br>
+                Data is raw; information is organized.<br>
+                Topics: Data security, information security, cybercrimes, and cybercriminals.<br>
+				</p>
+                
+            </ul>
+    </div>
+    <div class="highlight-box">
+      <h1>Sept 17, 2024</h1>
+      <img src="vency.png" alt="Image for Learning 3" style="width: 100%; height: 300px; border-radius: 5px;">
+	  <img src="vencyb.png" alt="Image for Learning 3" style="width: 100%; height: 300px; border-radius: 5px;">
+	    <h4 class="ctitle">Topic 4: Concept of Computer Security</h4>
+            <p class="cxp">- In this topic we've tackled about Computer Security and we are tasked to compile Cybercrime case.</p>
+    </div>
+    <div class="highlight-box">
+      <h1>Nov 7, 2024</h1>
+      <img src="venbrown1.png" alt="Image for Learning 4" style="width: 100%; height: 300px; border-radius: 5px;">
+      <img src="venbrown2.png" alt="Image for Learning 4" style="width: 100%; height: 300px; border-radius: 5px;">
+	  <h4 class="btitle">Topic 5: The Internet and World Wide Web</h4>
+	  <p class="bxp">- In this topic we've tackled about the Internet and WWW and then we are tasked to do an 
+                cross-analysis about Cloud computing, AI, and IoT using venn diagram.</p>
+    </div>
+    <div class="highlight-box">
+      <h1>Oct 28, 2024</h1>
+      <img src="venweb1.png" alt="Image for Learning 5" style="width: 25%; height: auto; border-radius: 5px;">
+	  <img src="venweb2.png" alt="Image for Learning 5" style="width: 25%; height: auto; border-radius: 5px;">
+	  <img src="venweb3.png" alt="Image for Learning 5" style="width: 25%; height: auto; border-radius: 5px;">
+	  <h4 class="ktitle">Topic 6: HTML AND CSS</h4>
+            <p class="kxp"> This is the current lesson that I find the most difficult right now because it involves coding and takes a long time to come up with ideas for a website </p>
+    </div>
+  </div>
+
+  <!-- Existing content for lessons -->
+  <div class="content">
+    <div class="highlight-box">
+      <h1>Output/Learnings Every Lesson:</h1>
+      <ul>
+        <li>I've learned about the history of computing technology, beginning with the mechanical age, which featured early devices such as the abacus and mechanical calculators that established the framework for current computers. The course looked at many periods of evolution, including the shift from mechanical to electrical computing, the creation of programmable devices, and the significance of early computers like ENIAC. We've recently been focusing on HTML and CSS, the core technologies for website development, studying how HTML arranges content and CSS styles it to produce visually appealing and user-friendly websites.</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <h1>My Favourite Lesson or a Lesson That Challenged Me the Most</h1>
+      <ul>
+        <li>HTML and CSS challenged me the most because I have trouble remembering the different HTML tags, comprehending the structure of the HTML document, and remembering other components necessary for efficient web development. I find coding in HTML and CSS difficult.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Ven Laurence Tiongco</p>
+    <div class="social-icons">
+      <!-- Social media icons here -->
+    </div>
+  </footer>
+</body>
+</html>

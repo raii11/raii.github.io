@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>raii-Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #fdf6e3;
+      color: #5a5a5a;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8e4d8; 
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo a {
+      text-decoration: none;
+      color: #8b5e34; 
+      font-weight: 5px;
+      font-size: 24px;
+    }
+    .logo a img {
+      max-width: 100px; 
+      height: auto;     
+    }
+
+    header nav a {
+      color: #00ffff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header nav a:hover {
+      color: #ff00ff;
+    }
+
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    header nav ul li {
+      margin: 0 20px;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      color: #8b5e34;
+      font-weight: bold;
+    }
+
+    header nav ul li a:hover {
+      color: #5a2e15;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: #6f4f2f; 
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+    }
+
+    .box img {
+      width: 100%;
+      height: auto;
+      max-width: 150px;
+      border-radius: 8px;
+      border: 5px solid #8b5e34;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #f8e4d8; 
+      margin-bottom: 10px;
+    }
+    p {
+	color: #f8e4d8;
+      margin: 10px 0;
+    }
+
+	
+    .social-icons a {
+      color: #f8e4d8; 
+      margin: 0 10px;
+      font-size: 50px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      color: #5a2e15; 
+    }
+
+    footer {
+        background-color: #f8e4d8;
+        color: #5a5a5a;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+        font-size: 0.9em;
+    }
+
+    .video-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      .video-container video {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <a href="ven_tiongco.html"><img src="13371-mxUhhpJ-removebg-preview.png" alt="Logo"></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="ven_tiongco.html">HOME</a></li>
+        <li><a href="it111blog.html">ITIII BLOG ENTRIES</a></li>
+        <li><a href="fklexven.html">FLEX</a></li>
+      </ul>
+    </nav>
+  </header>
+ <div class="welcome-container" style="background-color: #8b5e34; color: #f8e4d8; text-align: center; padding: 20px; margin-top: -10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+    <h2 style="font-family: 'Arial', sans-serif; font-size: 28px;">Welcome to website!</h2>
+    <p style="font-size: 18px; margin: 10px 0;">Here, you'll find a showcase of my journey in web development, featuring my latest projects, insights, and tips. Dive in and explore the world of coding and creativey with me!</p>
+  </div>
+
+  <section class="main-container">
+    <div class="box">
+      <h3>Social Media</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/rence.tiongco.5?mibextid=ZbWKwL" target="_blank">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+        <a href="https://www.instagram.com/raii_zo0/profilecard/?igsh=em55Y25tbWgxbmdp" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <h3>Self Introduction</h3>
+      <img src="bossing.jpg" alt="Ven Laurence Tiongco">
+      <br><br>
+      <p>Hi! I am Ven Laurence L. Tiongco. I am 19 years old. I love playing video games and baseball is my favorite sport.</p>
+    </div>
+
+    <div class="box">
+      <h3>My Future Self</h3>
+      <img src="ako ni.jpg" alt="My Future Self">
+      <p>Explore my aspirations and future projects in web development and design.</p>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <div class="video-container">
+    <video controls>
+      <source src="venvid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <footer>
+    &copy; 2024 Ven Laurence Tiongco
+  </footer>
+</body>
+</html>
